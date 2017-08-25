@@ -1,2 +1,2 @@
-ezmedia: { name: "EzMedia" }
-field_definition.ezmedia.default_value: "Default value"
+ezextramedia: { name: "EzExtraMedia" }
+field_definition.ezextramedia.default_value: "Default value"

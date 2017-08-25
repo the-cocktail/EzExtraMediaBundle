@@ -6,5 +6,5 @@ use eZ\Publish\SPI\Search\FieldType;
 
 class EzMediaField extends FieldType
 {
-    protected $type = 'ezmedia';
+    protected $type = 'ezextramedia';
 }

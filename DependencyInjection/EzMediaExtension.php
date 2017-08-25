@@ -40,8 +40,8 @@ class EzMediaExtension extends Extension implements PrependExtensionInterface
     private function prependYui(ContainerBuilder $container)
     {
         $container->setParameter(
-            'ezmediafieldtype.public_dir',
-            'bundles/ezmedia'
+            'ezextramediafieldtype.public_dir',
+            'bundles/ezextramedia'
         );
         $yuiConfigFile = __DIR__ . '/../Resources/config/yui.yml';
         $config = Yaml::parse(file_get_contents($yuiConfigFile));
@@ -52,8 +52,8 @@ class EzMediaExtension extends Extension implements PrependExtensionInterface
     private function prependCss(ContainerBuilder $container)
     {
         $container->setParameter(
-            'ezmediafieldtype.public_dir',
-            'bundles/ezmedia'
+            'ezextramediafieldtype.public_dir',
+            'bundles/ezextramedia'
         );
         $cssConfigFile = __DIR__ . '/../Resources/config/css.yml';
         $config = Yaml::parse(file_get_contents($cssConfigFile));

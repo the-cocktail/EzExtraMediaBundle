@@ -2,4 +2,4 @@ system:
     default:
         css:
             files:
-                - %ezmediafieldtype.public_dir%/css/views/fields/edit/ezmedia.css
+                - %ezextramediafieldtype.public_dir%/css/views/fields/edit/ezextramedia.css

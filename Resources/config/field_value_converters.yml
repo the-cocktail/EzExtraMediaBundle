@@ -1,9 +1,9 @@
 parameters:
-    ezpublish.fieldType.ezmedia.converter.class: TheCocktail\EzMediaBundle\Persistence\Content\FieldValue\Converter\EzMediaConverter
+    ezpublish.fieldType.ezextramedia.converter.class: TheCocktail\EzMediaBundle\Persistence\Content\FieldValue\Converter\EzMediaConverter
 
 services:
-    ezpublish.fieldType.ezmedia.converter:
-        class: "%ezpublish.fieldType.ezmedia.converter.class%"
+    ezpublish.fieldType.ezextramedia.converter:
+        class: "%ezpublish.fieldType.ezextramedia.converter.class%"
         tags:
-            - {name: ezpublish.storageEngine.legacy.converter, alias: ezmedia, lazy: true, callback: '::create'}
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezextramedia, lazy: true, callback: '::create'}
 

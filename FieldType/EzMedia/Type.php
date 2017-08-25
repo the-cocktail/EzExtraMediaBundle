@@ -38,7 +38,7 @@ class Type extends FieldType
 
     public function getFieldTypeIdentifier()
     {
-        return 'ezmedia';
+        return 'ezextramedia';
     }
 
     public function getName(SPIValue $value)

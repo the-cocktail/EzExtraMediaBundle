@@ -1,13 +1,13 @@
-YUI.add('ezmedia-editview', function (Y) {
+YUI.add('ezextramedia-editview', function (Y) {
     "use strict";
-    Y.namespace('eZMedia');
+    Y.namespace('eZExtraMedia');
 
     var L = Y.Lang,
-        FIELDTYPE_IDENTIFIER = 'ezmedia';
+        FIELDTYPE_IDENTIFIER = 'ezextramedia';
 
-    Y.eZMedia.EzMediaEditView = Y.Base.create('ezmediaEditView', Y.eZ.FieldEditView, [], {
+    Y.eZExtraMedia.EzExtraMediaEditView = Y.Base.create('ezextramediaEditView', Y.eZ.FieldEditView, [], {
         events: {
-            '.ezmedia-input-ui input': {
+            '.ezextramedia-input-ui input': {
                 'blur': 'validate',
                 'valuechange': 'validate'
             }
@@ -33,15 +33,15 @@ YUI.add('ezmedia-editview', function (Y) {
         },
 
         _getInputValidity: function () {
-            return this.get('container').one('.ezmedia-input-ui input').get('validity');
+            return this.get('container').one('.ezextramedia-input-ui input').get('validity');
         },
 
         _getFieldValue: function () {
-            return this.get('container').one('.ezmedia-input-ui input').get('value');
+            return this.get('container').one('.ezextramedia-input-ui input').get('value');
         }
     });
 
     Y.eZ.FieldEditView.registerFieldEditView(
-        FIELDTYPE_IDENTIFIER, Y.eZMedia.EzMediaEditView
+        FIELDTYPE_IDENTIFIER, Y.eZExtraMedia.EzExtraMediaEditView
     );
 });

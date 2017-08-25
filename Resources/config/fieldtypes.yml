@@ -1,19 +1,19 @@
 parameters:
-    ezpublish.fieldType.ezmedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\Type
-    ezrepoforms.field_type.form_mapper.ezmedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\FormMapper
+    ezpublish.fieldType.ezextramedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\Type
+    ezrepoforms.field_type.form_mapper.ezextramedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\FormMapper
 
 services:
-    ezpublish.fieldType.ezmedia:
-        class: "%ezpublish.fieldType.ezmedia.class%"
+    ezpublish.fieldType.ezextramedia:
+        class: "%ezpublish.fieldType.ezextramedia.class%"
         parent: ezpublish.fieldType
         tags:
-            - {name: ezpublish.fieldType, alias: ezmedia}
+            - {name: ezpublish.fieldType, alias: ezextramedia}
 
-    ezrepoforms.field_type.form_mapper.ezmedia:
-        class: "%ezrepoforms.field_type.form_mapper.ezmedia.class%"
+    ezrepoforms.field_type.form_mapper.ezextramedia:
+        class: "%ezrepoforms.field_type.form_mapper.ezextramedia.class%"
         tags:
-            - { name: ez.fieldFormMapper.definition, fieldType: ezmedia }
-            - { name: ez.fieldFormMapper.value, fieldType: ezmedia }
+            - { name: ez.fieldFormMapper.definition, fieldType: ezextramedia }
+            - { name: ez.fieldFormMapper.value, fieldType: ezextramedia }
         arguments:
             - "@ezpublish.api.service.field_type"
 

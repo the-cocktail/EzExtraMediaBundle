@@ -13,7 +13,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ezmediatype');
+        $rootNode = $treeBuilder->root('ezextramediatype');
 
         return $treeBuilder;
     }

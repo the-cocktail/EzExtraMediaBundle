@@ -4,22 +4,22 @@ system:
             modules:
                 ez-rawcontentview:
                     requires:
-                        - 'ezmedia-view'
+                        - 'ezextramedia-view'
                 ez-contenteditformview:
                     requires:
-                        - 'ezmedia-editview'
-                ezmedia-view:
-                    requires: ['ez-fieldview', 'ezmediaview-ez-template']
-                    path: "%ezmediafieldtype.public_dir%/js/views/fields/ezmedia-view.js"
-                ezmedia-editview:
-                    requires: ['ez-fieldeditview', 'event-valuechange', 'ezmediaeditview-ez-template']
-                    path: "%ezmediafieldtype.public_dir%/js/views/fields/ezmedia-editview.js"
-                ezmediaview-ez-template:
+                        - 'ezextramedia-editview'
+                ezextramedia-view:
+                    requires: ['ez-fieldview', 'ezextramediaview-ez-template']
+                    path: "%ezextramediafieldtype.public_dir%/js/views/fields/ezextramedia-view.js"
+                ezextramedia-editview:
+                    requires: ['ez-fieldeditview', 'event-valuechange', 'ezextramediaeditview-ez-template']
+                    path: "%ezextramediafieldtype.public_dir%/js/views/fields/ezextramedia-editview.js"
+                ezextramediaview-ez-template:
                     type: 'template'
-                    path: "%ezmediafieldtype.public_dir%/templates/fields/view/ezmedia.hbt"
-                ezmediaeditview-ez-template:
+                    path: "%ezextramediafieldtype.public_dir%/templates/fields/view/ezextramedia.hbt"
+                ezextramediaeditview-ez-template:
                     type: 'template'
-                    path: "%ezmediafieldtype.public_dir%/templates/fields/edit/ezmedia.hbt"
+                    path: "%ezextramediafieldtype.public_dir%/templates/fields/edit/ezextramedia.hbt"
 
 
 
