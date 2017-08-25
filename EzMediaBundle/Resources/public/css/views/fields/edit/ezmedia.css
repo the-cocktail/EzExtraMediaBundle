@@ -1,0 +1,9 @@
+.ezmedia-input-ui {
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.ezmedia-input-ui input {
+    width: 100%;
+}

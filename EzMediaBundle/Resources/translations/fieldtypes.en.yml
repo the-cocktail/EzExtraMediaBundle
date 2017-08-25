@@ -1,0 +1,2 @@
+ezmedia: { name: "EzMedia" }
+field_definition.ezmedia.default_value: "Default value"

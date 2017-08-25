@@ -1,0 +1,26 @@
+system:
+    default:
+        yui:
+            modules:
+                ez-rawcontentview:
+                    requires:
+                        - 'ezmedia-view'
+                ez-contenteditformview:
+                    requires:
+                        - 'ezmedia-editview'
+                ezmedia-view:
+                    requires: ['ez-fieldview', 'ezmediaview-ez-template']
+                    path: "%ezmediafieldtype.public_dir%/js/views/fields/ezmedia-view.js"
+                ezmedia-editview:
+                    requires: ['ez-fieldeditview', 'event-valuechange', 'ezmediaeditview-ez-template']
+                    path: "%ezmediafieldtype.public_dir%/js/views/fields/ezmedia-editview.js"
+                ezmediaview-ez-template:
+                    type: 'template'
+                    path: "%ezmediafieldtype.public_dir%/templates/fields/view/ezmedia.hbt"
+                ezmediaeditview-ez-template:
+                    type: 'template'
+                    path: "%ezmediafieldtype.public_dir%/templates/fields/edit/ezmedia.hbt"
+
+
+
+

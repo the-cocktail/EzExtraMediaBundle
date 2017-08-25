@@ -1,0 +1,8 @@
+parameters:
+    ezpublish.fieldType.indexable.ezmedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\SearchField
+
+services:
+    ezpublish.fieldType.indexable.ezmedia:
+        class: "%ezpublish.fieldType.indexable.ezmedia.class%"
+        tags:
+            - {name: ezpublish.fieldType.indexable, alias: ezmedia}
