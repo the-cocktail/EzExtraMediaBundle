@@ -1,12 +1,12 @@
 <?php
 
-namespace TheCocktail\EzMediaBundle\FieldType\EzMedia;
+namespace TheCocktail\EzExtraMediaBundle\FieldType\EzMedia;
 
 use eZ\Publish\SPI\Persistence\Content\Field;
 use eZ\Publish\SPI\Persistence\Content\Type\FieldDefinition;
 use eZ\Publish\SPI\FieldType\Indexable;
 use eZ\Publish\SPI\Search;
-use TheCocktail\EzMediaBundle\Search\FieldType\EzMediaField;
+use TheCocktail\EzExtraMediaBundle\Search\FieldType\EzExtraMediaField;
 
 class SearchField implements Indexable
 {
@@ -16,7 +16,7 @@ class SearchField implements Indexable
             new Search\Field(
                 'value',
                 $field->value->data,
-                new EzMediaField()
+                new EzExtraMediaField()
             ),
             new Search\Field(
                 'fulltext',
@@ -29,7 +29,7 @@ class SearchField implements Indexable
     public function getIndexDefinition()
     {
         return array(
-            'value' => new EzMediaField(),
+            'value' => new EzExtraMediaField(),
         );
     }
 

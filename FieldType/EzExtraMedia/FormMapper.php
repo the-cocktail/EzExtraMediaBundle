@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzMediaBundle\FieldType\EzMedia;
+namespace TheCocktail\EzExtraMediaBundle\FieldType\EzMedia;
 
 use eZ\Publish\API\Repository\FieldTypeService;
 use EzSystems\RepositoryForms\Data\Content\FieldData;

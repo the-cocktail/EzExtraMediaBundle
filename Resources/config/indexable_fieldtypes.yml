@@ -1,5 +1,5 @@
 parameters:
-    ezpublish.fieldType.indexable.ezextramedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\SearchField
+    ezpublish.fieldType.indexable.ezextramedia.class: TheCocktail\EzExtraMediaBundle\FieldType\EzExtraMedia\SearchField
 
 services:
     ezpublish.fieldType.indexable.ezextramedia:

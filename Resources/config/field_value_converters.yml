@@ -1,5 +1,5 @@
 parameters:
-    ezpublish.fieldType.ezextramedia.converter.class: TheCocktail\EzMediaBundle\Persistence\Content\FieldValue\Converter\EzMediaConverter
+    ezpublish.fieldType.ezextramedia.converter.class: TheCocktail\EzExtraMediaBundle\Persistence\Content\FieldValue\Converter\EzExtraMediaConverter
 
 services:
     ezpublish.fieldType.ezextramedia.converter:

@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzMediaBundle\Persistence\Content\FieldValue\Converter;
+namespace TheCocktail\EzExtraMediaBundle\Persistence\Content\FieldValue\Converter;
 
 use eZ\Publish\Core\Persistence\Legacy\Content\FieldValue\Converter;
 use eZ\Publish\Core\Persistence\Legacy\Content\StorageFieldValue;
@@ -8,7 +8,7 @@ use eZ\Publish\SPI\Persistence\Content\FieldValue;
 use eZ\Publish\SPI\Persistence\Content\Type\FieldDefinition;
 use eZ\Publish\Core\Persistence\Legacy\Content\StorageFieldDefinition;
 
-class EzMediaConverter implements Converter
+class EzExtraMediaConverter implements Converter
 {
     public static function create()
     {

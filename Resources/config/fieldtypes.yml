@@ -1,6 +1,6 @@
 parameters:
-    ezpublish.fieldType.ezextramedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\Type
-    ezrepoforms.field_type.form_mapper.ezextramedia.class: TheCocktail\EzMediaBundle\FieldType\EzMedia\FormMapper
+    ezpublish.fieldType.ezextramedia.class: TheCocktail\EzExtraMediaBundle\FieldType\EzExtraMedia\Type
+    ezrepoforms.field_type.form_mapper.ezextramedia.class: TheCocktail\EzExtraMediaBundle\FieldType\EzExtraMedia\FormMapper
 
 services:
     ezpublish.fieldType.ezextramedia:

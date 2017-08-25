@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzMediaBundle\DependencyInjection;
+namespace TheCocktail\EzExtraMediaBundle\DependencyInjection;
 
 use Symfony\Component\Config\Resource\FileResource;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\Yaml\Yaml;
 
-class EzMediaExtension extends Extension implements PrependExtensionInterface
+class EzExtraMediaExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * {@inheritdoc}
@@ -28,7 +28,7 @@ class EzMediaExtension extends Extension implements PrependExtensionInterface
 
     public function prepend(ContainerBuilder $container)
     {
-        $container->prependExtensionConfig('assetic', array('bundles' => array('EzMediaBundle')));
+        $container->prependExtensionConfig('assetic', array('bundles' => array('EzExtraMediaBundle')));
 
         $config = Yaml::parse(__DIR__ . '/../Resources/config/field_templates.yml');
         $container->prependExtensionConfig('ezpublish', $config);

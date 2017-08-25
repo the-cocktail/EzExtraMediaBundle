@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzMediaBundle\DependencyInjection;
+namespace TheCocktail\EzExtraMediaBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

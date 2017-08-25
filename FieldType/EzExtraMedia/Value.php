@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzMediaBundle\FieldType\EzMedia;
+namespace TheCocktail\EzExtraMediaBundle\FieldType\EzExtraMedia;
 
 use eZ\Publish\Core\FieldType\Value as BaseValue;
 
