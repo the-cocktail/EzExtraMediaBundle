@@ -20,7 +20,7 @@ class EzMediaExtension extends Extension implements PrependExtensionInterface
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('fieldtypes.yml');
         $loader->load('indexable_fieldtypes.yml');
         $loader->load('field_value_converters.yml');
