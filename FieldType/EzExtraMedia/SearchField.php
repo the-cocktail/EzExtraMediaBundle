@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCocktail\EzExtraMediaBundle\FieldType\EzMedia;
+namespace TheCocktail\EzExtraMediaBundle\FieldType\EzExtraMedia;
 
 use eZ\Publish\SPI\Persistence\Content\Field;
 use eZ\Publish\SPI\Persistence\Content\Type\FieldDefinition;

@@ -13,7 +13,7 @@
     "ezsystems/ezpublish-kernel": "~5.3 | ~6.0 | >=2014.03"
   },
   "autoload": {
-    "psr-4": {"TheCocktail\\EzMediaBundle\\": ""}
+    "psr-4": {"TheCocktail\\EzExtraMediaBundle\\": ""}
   },
   "target-dir": ""
 }
